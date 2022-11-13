@@ -33,18 +33,67 @@
     color: black;
 }
 
+.between{
+    justify-content: space-between;
+}
 
 
-.sidebar{
+
+.side-bar{
     background-color: red;
-    width: 30%;
-    height: 100px;
+    width: 100%;
+    height: 2100px;
 }
 
 .top-bar{
     background-color: blue;
+    width: 100%;
+    height: 100px;
 }
 
-.main{
+main{
     background-color: green;
+    width: 100%;
+    height: 2000px;
+}
+
+.col-20{
+    width: 20%;
+    min-height: 100%;
+
+}
+
+.col-80{
+    width: 80%;
+
+}
+
+.col-25{
+    background-color: yellow;
+    width: 20%;
+    height: 100px;
+    
+}
+
+.col-50{
+    background-color: yellow;
+    width: 50%;
+    height: 100px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+}
+
+.col1, .col2{
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+}
+
+.col2{
+    align-self: flex-end;
 }
