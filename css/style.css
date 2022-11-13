@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* UTILITY CLASS */
+.display-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.text-align-center{
+    text-align: center;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    color: black;
+}
+
+
+
+.sidebar{
+    background-color: red;
+    width: 30%;
+    height: 100px;
+}
+
+.top-bar{
+    background-color: blue;
+}
+
+.main{
+    background-color: green;
+}
