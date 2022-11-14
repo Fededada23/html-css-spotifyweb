@@ -32,6 +32,10 @@
     padding: 150px 0;
 }
 
+.display-none{
+    display: none;
+}
+
 .margin-10px{
     margin-bottom: 10px;
 }
@@ -93,7 +97,9 @@ header{
     list-style-type: none;
     flex-wrap: wrap;
 }
-
+li{
+    margin: 0 10px;
+}
 .section-menu{
     width: 90%;
     height: 100px;
@@ -106,6 +112,10 @@ header{
     height: 100px;
     background-color: pink;
 
+}
+
+.section-menu p{
+    display: none;
 }
 
 .playlist{
@@ -130,6 +140,7 @@ footer img{
 
 .col-30{
     width: 30%;
+    text-align: center;
     
 }
 .col-40{
@@ -142,12 +153,44 @@ footer img{
     align-items: center;
 }
 
+.ul-playlist{
+    display: none;
+    list-style-type: none;
+    text-align: left;
+}
+
+.crea{
+    display: none;
+   
+}
 
 
 @media screen and (min-width: 768px){
     aside{
-        width: 100px
+        width: 200px
     }
+    .ul-playlist{
+        display: block;
+    }
+    .crea{
+        display: block;
+        display: flex;
+       
+    }
+
+    header{
+        width: calc(100vw - 170px);
+    }
+
+    .section-menu{
+       text-align: initial;
+    }
+
+    .section-menu p{
+        display: block;
+    }
+
+    
     
 }
 
