@@ -190,7 +190,9 @@ footer img{
         display: block;
     }
 
-    
+    .col-50{
+        width: 20%;
+    }
     
 }
 
