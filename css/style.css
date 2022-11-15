@@ -44,6 +44,8 @@
     justify-content: space-between;
 }
 
+/* FINISH UTILITY CLASS */
+
 .wrapper{
     width: 100vw;
     height: calc(100vh - 100px);
@@ -63,22 +65,18 @@ footer{
 
 aside{
     width: 50px;
-    background-color: red;
+    background-color: black;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.section-menu span{
-    display: none;
-}
+
 a{
     color: white;
 }
-.subtitles{
-    text-align: center;
-}
+
 .main{
     width: 100%;
     height: 100%;
@@ -89,13 +87,14 @@ a{
     height: 100%;
 }
 header{
-    background-color: grey;
+    background-color: rgb(3, 3, 47);
     width: calc(100vw - 50px);
     height: 100px;
     position: fixed;
     top: 0;
     justify-content: flex-end;
     display: flex;
+    position: relative;
 }
 
 .ul-main{
@@ -108,28 +107,9 @@ header{
 li{
     margin: 0 10px;
 }
-.section-menu{
-    width: 90%;
-    height: 100px;
-    background-color: pink;
-    text-align: center;
-}
-
-.artist{
-    width: 100%;
-    height: 100px;
-    background-color: pink;
-
-}
 
 .section-menu p{
     display: none;
-}
-
-.playlist{
-    width: 100%;
-    height: 1000px;
-    background-color: black;
 }
 
 .col-50{
@@ -142,12 +122,11 @@ img{
     max-width: 100%;
 }
 
-
 .col-30{
     width: 30%;
-    text-align: center;
-    
+    text-align: center;    
 }
+
 .col-40{
     width: 40%;
     
@@ -168,6 +147,7 @@ img{
     display: none;
    
 }
+
 .left-section, .central-section, .right-section{
     height: 100%;
 
@@ -226,12 +206,12 @@ img{
     width: 100%;
     padding: 5px;
 }
+
 .player-buttons ul{
     display: flex;
     list-style: none;
     
 }
-
 
 .progress-bar{
     width: 80%;
@@ -247,8 +227,6 @@ img{
     position: relative;
     background-color: white;
 }
-
-
 
 .progress-bar:hover .progress-bar-cursor{
     display: block;
@@ -271,16 +249,18 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: black;
+    width: 80%;
 }
 
 .nav-top{
-    background-color: grey;
+    background-color: black;
     height: 400px;
     overflow-y: hidden;
 }
 
 .nav-bottom{
-    background-color: grey;
+    background-color: black;
     height: 100px;
 }
 
@@ -293,7 +273,37 @@ nav{
 .playlists{
     overflow-y: hidden;
     height: 100%;
+    display: none;
 }
+
+.logo-spotify-mobile{
+    width: 100%;
+
+}
+
+.logo-mobile{
+    width: 100%;
+    height: 10%;
+}
+
+.logo-desktop{
+    display: none;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
 @media screen and (min-width: 768px){
     aside{
         width: 200px
@@ -323,4 +333,30 @@ nav{
         width: 20%;
     }
     
+    .logo-spotify-mobile{
+        display: none;
+    }
+
+    .logo-desktop{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo-mobile{
+        
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .playlists{
+        display: block;
+        color: white;
+    }
+
+    span{
+        color: white;
+    }
 }
