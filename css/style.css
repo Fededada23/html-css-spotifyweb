@@ -50,9 +50,15 @@
 }
 
 footer{
-    height: 120px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 aside{
@@ -67,7 +73,9 @@ aside{
 .section-menu span{
     display: none;
 }
-
+a{
+    color: white;
+}
 .subtitles{
     text-align: center;
 }
@@ -131,12 +139,9 @@ li{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
-footer img{
-    width: 40px;
-}
 
 .col-30{
     width: 30%;
@@ -163,8 +168,132 @@ footer img{
     display: none;
    
 }
+.left-section, .central-section, .right-section{
+    height: 100%;
+
+}
+
+.left-section, .right-section{
+    width: 30%;
+}
+
+.central-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    justify-content: space-around;
+    text-align: initial;
+    align-items: center;
+}
+
+.currently-playing{
+    display: flex;
+    justify-content: space-around;
+    align-items: 100%;
+}
+
+.currently-image{
+    display: none;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-song{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+   
+}
+
+.time-min, .time-max{
+    font-size: 10px;
+}
+
+.player-barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.player-buttons ul{
+    display: flex;
+    list-style: none;
+    
+}
 
 
+.progress-bar{
+    width: 80%;
+    height: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.played-time{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+}
+
+
+
+.progress-bar:hover .progress-bar-cursor{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%);
+}
+
+.progress-bar:hover .played-time{
+    background-color: greenyellow;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-top{
+    background-color: grey;
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.nav-bottom{
+    background-color: grey;
+    height: 100px;
+}
+
+.playlists ul{
+    list-style: none;
+    padding-left: 15px;
+    height: 70%;
+    overflow-y: auto;
+}
+.playlists{
+    overflow-y: hidden;
+    height: 100%;
+}
 @media screen and (min-width: 768px){
     aside{
         width: 200px
@@ -195,4 +324,3 @@ footer img{
     }
     
 }
-
